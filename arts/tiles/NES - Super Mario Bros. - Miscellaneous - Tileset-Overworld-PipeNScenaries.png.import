@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b43eknoib1ci3"
-path="res://.godot/imported/NES - Super Mario Bros. - Miscellaneous - Tileset - Overworld-Coins.png-99c79a388f07e2db5abb9db6b14d52b8.ctex"
+uid="uid://buw5rgbhbrl5r"
+path="res://.godot/imported/NES - Super Mario Bros. - Miscellaneous - Tileset-Overworld-PipeNScenaries.png-3f12e5da4ffd780e8868a410b3ba02e5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://NES - Super Mario Bros. - Miscellaneous - Tileset - Overworld-Coins.png"
-dest_files=["res://.godot/imported/NES - Super Mario Bros. - Miscellaneous - Tileset - Overworld-Coins.png-99c79a388f07e2db5abb9db6b14d52b8.ctex"]
+source_file="res://arts/tiles/NES - Super Mario Bros. - Miscellaneous - Tileset-Overworld-PipeNScenaries.png"
+dest_files=["res://.godot/imported/NES - Super Mario Bros. - Miscellaneous - Tileset-Overworld-PipeNScenaries.png-3f12e5da4ffd780e8868a410b3ba02e5.ctex"]
 
 [params]
 

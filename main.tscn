@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://b0c5mo30c1oi2"]
+
+[ext_resource type="PackedScene" uid="uid://b5eplljbd1nnm" path="res://MarioPlayer.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://c2mcfnufr2ajc" path="res://1-1Overworld.tscn" id="2_0xm2m"]
+
+[node name="Main" type="Node" unique_id=1006889611]
+
+[node name="Area2D" parent="." unique_id=1629486230 instance=ExtResource("1_ig7tw")]
+position = Vector2(91, -22)
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=1621633623]
+position = Vector2(92, -23)
+
+[node name="Node2D" parent="." unique_id=854175962 instance=ExtResource("2_0xm2m")]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=21891112]

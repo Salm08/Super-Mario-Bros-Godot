@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://b5eplljbd1nnm"]
 
 [ext_resource type="Script" uid="uid://mn6dysfl6jj3" path="res://mario_player.gd" id="1_1xt5n"]
-[ext_resource type="Texture2D" uid="uid://x5d6myu2edad" path="res://MarioSmallNoMov-Photoroom.png" id="1_aiceb"]
+[ext_resource type="Texture2D" uid="uid://qthmr4w76yfb" path="res://arts/marioPlayer/MarioSmallNoMov-Photoroom_resized.png" id="2_gvcof"]
 [ext_resource type="Texture2D" uid="uid://d35kaxfp6smrq" path="res://frame_0_delay-0.07s.png" id="3_gvcof"]
 [ext_resource type="Texture2D" uid="uid://k3pkvlx5d2tu" path="res://frame_1_delay-0.07s.png" id="4_f6hwy"]
 [ext_resource type="Texture2D" uid="uid://1ow7oj8ycx14" path="res://frame_2_delay-0.07s.png" id="5_mrolb"]
@@ -10,10 +10,10 @@
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_aiceb")
+"texture": ExtResource("2_gvcof")
 }],
 "loop": true,
-"name": &"fermo",
+"name": &"still",
 "speed": 5.0
 }, {
 "frames": [{
@@ -27,26 +27,24 @@ animations = [{
 "texture": ExtResource("5_mrolb")
 }],
 "loop": true,
-"name": &"movimento",
+"name": &"walkRight",
 "speed": 14.29
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n2ors"]
-size = Vector2(2.078125, 2.25)
+size = Vector2(2.024014, 2.2227702)
 
 [node name="Area2D" type="Area2D" unique_id=1629486230]
-position = Vector2(66, 38)
+position = Vector2(33, 32)
 script = ExtResource("1_1xt5n")
-metadata/_edit_group_ = true
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1396119758]
-scale = Vector2(0.15, 0.15)
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1450597198]
+position = Vector2(24, -46)
+scale = Vector2(4.17, 4.17)
 sprite_frames = SubResource("SpriteFrames_1xt5n")
-animation = &"movimento"
-frame = 1
-frame_progress = 0.5253114
+animation = &"still"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1443929433]
-position = Vector2(-0.009, -0.02)
-scale = Vector2(1.125, 1.125)
+position = Vector2(24, -46)
+scale = Vector2(29.15, 29.15)
 shape = SubResource("RectangleShape2D_n2ors")
