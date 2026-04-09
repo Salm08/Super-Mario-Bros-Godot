@@ -1,16 +1,29 @@
 [gd_scene format=3 uid="uid://b0c5mo30c1oi2"]
 
+[ext_resource type="Script" uid="uid://5ytr8pmim23r" path="res://main.gd" id="1_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://b5eplljbd1nnm" path="res://MarioPlayer.tscn" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://c2mcfnufr2ajc" path="res://1-1Overworld.tscn" id="2_0xm2m"]
+[ext_resource type="Script" uid="uid://bdghnogwk6cvm" path="res://camera_2d.gd" id="4_lquwl"]
 
 [node name="Main" type="Node" unique_id=1006889611]
+script = ExtResource("1_1bvp3")
+
+[node name="CharacterBody2D" parent="." unique_id=1154722143 instance=ExtResource("1_ig7tw")]
+z_index = 2
+position = Vector2(84, -62)
 
 [node name="Area2D" parent="." unique_id=1629486230 instance=ExtResource("1_ig7tw")]
-position = Vector2(91, -22)
+visible = false
+position = Vector2(83, 3.0000153)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=324424829]
+position = Vector2(161, -143)
+script = ExtResource("4_lquwl")
 
 [node name="Marker2D" type="Marker2D" parent="." unique_id=1621633623]
+visible = false
 position = Vector2(92, -23)
 
 [node name="Node2D" parent="." unique_id=854175962 instance=ExtResource("2_0xm2m")]
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=21891112]
+visibility_layer = 2
+position = Vector2(32, -55)

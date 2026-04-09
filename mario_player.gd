@@ -1,8 +1,8 @@
-extends Area2D
+extends CharacterBody2D
 
 signal hit
 
-@export var speed = 480
+@export var speed = 100
 var screen_size
 
 func _ready() -> void:
@@ -17,6 +17,8 @@ func _process(delta: float) -> void:
 		velocity.x -= 1
 	if Input.is_action_pressed("Right"):
 		velocity.x += 1
+	if Input.is_action_pressed("Up"):
+		velocity.y -= 1
 	
 	if velocity.length() > 0:
 		velocity = velocity.normalized() * speed

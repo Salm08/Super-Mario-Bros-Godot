@@ -17,7 +17,11 @@ config/icon="res://icon.svg"
 
 [display]
 
-window/stretch/mode="canvas_items"
+window/size/viewport_width=256
+window/size/viewport_height=224
+window/size/window_width_override=1024
+window/size/window_height_override=896
+window/stretch/mode="viewport"
 
 [input]
 
@@ -46,4 +50,7 @@ Up={
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
+2d/snap/snap_2d_transforms_to_pixel=true
+2d/snap/snap_2d_vertices_to_pixel=true
