@@ -8,22 +8,17 @@
 [node name="Main" type="Node" unique_id=1006889611]
 script = ExtResource("1_1bvp3")
 
-[node name="CharacterBody2D" parent="." unique_id=1154722143 instance=ExtResource("1_ig7tw")]
-z_index = 2
-position = Vector2(84, -62)
+[node name="Node2D" parent="." unique_id=854175962 instance=ExtResource("2_0xm2m")]
+visibility_layer = 2
+position = Vector2(32, -55)
 
-[node name="Area2D" parent="." unique_id=1629486230 instance=ExtResource("1_ig7tw")]
-visible = false
-position = Vector2(83, 3.0000153)
+[node name="CharacterBody2D" parent="." unique_id=1154722143 instance=ExtResource("1_ig7tw")]
+z_index = 1
+position = Vector2(103, -63)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=324424829]
 position = Vector2(161, -143)
 script = ExtResource("4_lquwl")
 
 [node name="Marker2D" type="Marker2D" parent="." unique_id=1621633623]
-visible = false
-position = Vector2(92, -23)
-
-[node name="Node2D" parent="." unique_id=854175962 instance=ExtResource("2_0xm2m")]
-visibility_layer = 2
-position = Vector2(32, -55)
+position = Vector2(103, -63)
