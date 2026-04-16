@@ -3,22 +3,13 @@
 [ext_resource type="Script" uid="uid://5ytr8pmim23r" path="res://main.gd" id="1_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://b5eplljbd1nnm" path="res://MarioPlayer.tscn" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://c2mcfnufr2ajc" path="res://1-1Overworld.tscn" id="2_0xm2m"]
-[ext_resource type="Script" uid="uid://bdghnogwk6cvm" path="res://camera_2d.gd" id="4_lquwl"]
 
 [node name="Main" type="Node" unique_id=1006889611]
 script = ExtResource("1_1bvp3")
 
 [node name="Node2D" parent="." unique_id=854175962 instance=ExtResource("2_0xm2m")]
 visibility_layer = 2
-position = Vector2(32, -55)
+position = Vector2(-38, 0)
 
 [node name="CharacterBody2D" parent="." unique_id=1154722143 instance=ExtResource("1_ig7tw")]
-z_index = 1
-position = Vector2(103, -63)
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=324424829]
-position = Vector2(161, -143)
-script = ExtResource("4_lquwl")
-
-[node name="Marker2D" type="Marker2D" parent="." unique_id=1621633623]
-position = Vector2(103, -63)
+position = Vector2(8, -8)
