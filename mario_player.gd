@@ -17,8 +17,7 @@ func _process(delta: float) -> void:
 		input_velocity.x += 1
 	if Input.is_action_pressed("Up"):
 		input_velocity.y -= 1
-	if Input.is_action_pressed("Down"):
-		input_velocity.y += 1
+	
 
 	if input_velocity.length() > 0:
 		self.velocity = input_velocity.normalized() * speed

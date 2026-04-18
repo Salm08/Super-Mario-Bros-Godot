@@ -36,6 +36,7 @@ animations = [{
 }]
 
 [node name="Mario" type="CharacterBody2D" unique_id=1154722143]
+physics_interpolation_mode = 1
 z_index = 2
 position = Vector2(37, 37)
 script = ExtResource("1_1xt5n")
@@ -47,7 +48,9 @@ shape = SubResource("RectangleShape2D_n2ors")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1450597198]
 scale = Vector2(0.9174, 0.9174)
 sprite_frames = SubResource("SpriteFrames_1xt5n")
-animation = &"still"
+animation = &"walkRight"
+frame = 2
+frame_progress = 0.7501912
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1030820320]
 position = Vector2(87, -99)
@@ -57,3 +60,5 @@ limit_top = -352
 limit_right = 3960
 limit_bottom = 96
 script = ExtResource("6_f6hwy")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=2007502781]
