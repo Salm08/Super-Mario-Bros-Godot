@@ -9,7 +9,7 @@
 [ext_resource type="Script" uid="uid://bdghnogwk6cvm" path="res://camera_2d.gd" id="6_f6hwy"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n2ors"]
-size = Vector2(2.259473, 2.2709584)
+size = Vector2(1.9682672, 2.2709584)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_1xt5n"]
 animations = [{
@@ -51,20 +51,19 @@ position = Vector2(37, 37)
 script = ExtResource("1_1xt5n")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1443929433]
-scale = Vector2(6.413, 6.413)
+scale = Vector2(5.632, 6.467)
 shape = SubResource("RectangleShape2D_n2ors")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1450597198]
 scale = Vector2(0.9174, 0.9174)
 sprite_frames = SubResource("SpriteFrames_1xt5n")
-animation = &"jump"
-frame_progress = 0.1273273
+animation = &"still"
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1030820320]
 position = Vector2(87, -99)
 zoom = Vector2(1.03, 0.92)
 limit_left = 0
-limit_top = -352
+limit_top = -422
 limit_right = 3960
-limit_bottom = 96
+limit_bottom = 26
 script = ExtResource("6_f6hwy")

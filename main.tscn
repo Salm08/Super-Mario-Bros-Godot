@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://5ytr8pmim23r" path="res://main.gd" id="1_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://b5eplljbd1nnm" path="res://MarioPlayer.tscn" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://c2mcfnufr2ajc" path="res://1-1Overworld.tscn" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://c3dsvxy3ypb3e" path="res://EnemyGoomba.tscn" id="3_1bvp3"]
 
 [node name="Main" type="Node" unique_id=1006889611]
 script = ExtResource("1_1bvp3")
@@ -11,5 +12,8 @@ script = ExtResource("1_1bvp3")
 visibility_layer = 2
 position = Vector2(-38, 0)
 
-[node name="CharacterBody2D" parent="." unique_id=1154722143 instance=ExtResource("1_ig7tw")]
+[node name="Mario" parent="." unique_id=1154722143 instance=ExtResource("1_ig7tw")]
 position = Vector2(8, -8)
+
+[node name="Goomba" parent="." unique_id=1477849512 instance=ExtResource("3_1bvp3")]
+position = Vector2(80, -8)
