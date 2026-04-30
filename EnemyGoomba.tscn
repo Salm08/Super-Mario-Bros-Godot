@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dweavwj0hpt63" path="res://arts/Goomba/GoombaWalkLeft.png" id="1_1x5ce"]
 [ext_resource type="Texture2D" uid="uid://dswblkfkslhb1" path="res://arts/Goomba/GoombaCrushed.png" id="1_bovbo"]
+[ext_resource type="Script" uid="uid://bpyxigqdl8yqp" path="res://enemy_goomba.gd" id="1_eoxyk"]
 [ext_resource type="Texture2D" uid="uid://da1763wninab1" path="res://arts/Goomba/GoombaWalkRight.png" id="2_bovbo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1x5ce"]
@@ -30,6 +31,7 @@ animations = [{
 }]
 
 [node name="Goomba" type="CharacterBody2D" unique_id=1477849512]
+script = ExtResource("1_eoxyk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1387077011]
 shape = SubResource("RectangleShape2D_1x5ce")
@@ -37,4 +39,3 @@ shape = SubResource("RectangleShape2D_1x5ce")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=541586145]
 sprite_frames = SubResource("SpriteFrames_eoxyk")
 animation = &"Walk"
-frame_progress = 0.5698002

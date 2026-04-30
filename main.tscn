@@ -7,6 +7,7 @@
 
 [node name="Main" type="Node" unique_id=1006889611]
 script = ExtResource("1_1bvp3")
+EnemyGoomba_scene = ExtResource("3_1bvp3")
 
 [node name="Node2D" parent="." unique_id=854175962 instance=ExtResource("2_0xm2m")]
 visibility_layer = 2
@@ -16,4 +17,6 @@ position = Vector2(-38, 0)
 position = Vector2(8, -8)
 
 [node name="Goomba" parent="." unique_id=1477849512 instance=ExtResource("3_1bvp3")]
-position = Vector2(80, -8)
+position = Vector2(323, -8)
+
+[node name="TempoGioco" type="Timer" parent="." unique_id=10559304]

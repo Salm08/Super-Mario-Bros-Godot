@@ -2,6 +2,8 @@ extends Node
 
 var tempo
 
+@export var EnemyGoomba_scene: PackedScene
+var score
 #func _ready() -> void:
 #	$TimerDiGioco.start()
 
