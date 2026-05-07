@@ -30,6 +30,8 @@ func get_stomped() -> void:
 	is_dead = true
 	velocity = Vector2.ZERO
 	$CollisionShape2D.set_deferred("disabled", true)  # evita ulteriori collisioni
+	$CollisionShape2D.shape.size = Vector2(16, 8) # Nuova dimensione
+	$CollisionShape2D.position.y = 4 # Abbassa la collisione per non affondare
 	$AnimatedSprite2D.play("Crushed")
 	# Aspetta che l'animazione finisca poi rimuovi
 	$AnimatedSprite2D.animation_finished.connect(_on_crushed_finished)

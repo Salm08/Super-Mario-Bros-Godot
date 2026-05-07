@@ -31,12 +31,12 @@ animations = [{
 }]
 
 [node name="Goomba" type="CharacterBody2D" unique_id=1477849512]
+collision_layer = 4
 script = ExtResource("1_eoxyk")
-speed = null
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1387077011]
 shape = SubResource("RectangleShape2D_1x5ce")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=541586145]
 sprite_frames = SubResource("SpriteFrames_eoxyk")
-animation = &"Walk"
+animation = &"Crushed"
